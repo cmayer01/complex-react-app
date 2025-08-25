@@ -1,18 +1,24 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-function ExampleComponent() {
+// Components
+import Header from "./components/Header"
+import HomeGuest from "./HomeGuest"
+import Footer from "./components/Footer"
+
+function Main() {
   return (
-    <div>
-      <h1>this is our app!</h1>
-      <p>The sky is blue.</p>
-    </div>
+    <>
+      <Header />
+      <HomeGuest />
+      <Footer />
+    </>
   )
 }
 
-//console.log("hi")
 const root = ReactDOM.createRoot(document.querySelector("#app"))
+root.render(<Main />)
 
-root.render(<ExampleComponent />)
-
-//export default ExampleComponent
+if (module.hot) {
+  module.hot.accept()
+}
