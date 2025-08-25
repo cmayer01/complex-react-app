@@ -10,6 +10,9 @@ function ExampleComponent() {
   )
 }
 
-const root = ReactDOM.createRoot(document.querySelector("app"))
+//console.log("hi")
+const root = ReactDOM.createRoot(document.querySelector("#app"))
 
 root.render(<ExampleComponent />)
+
+//export default ExampleComponent
