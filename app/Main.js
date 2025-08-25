@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 // Components
 import Header from "./components/Header"
-import HomeGuest from "./HomeGuest"
+import HomeGuest from "./components/HomeGuest"
 import Footer from "./components/Footer"
 import About from "./components/About"
 import Terms from "./components/Terms"
